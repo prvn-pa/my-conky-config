@@ -1,0 +1,60 @@
+background no
+update_interval 600
+double_buffer yes
+no_buffers yes
+
+# Window specifications #
+own_window yes
+own_window_type normal
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_title 
+own_window_colour 000000
+own_window_transparent yes
+#own_window_argb_visual yes
+#own_window_argb_value 255
+
+minimum_size 233 93
+maximub_width 233
+# Alignment #
+alignment top_left
+gap_x 60
+gap_y 210
+border_inner_margin 0
+border_outer_margin 0
+
+# Graphics settings #
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+# Text settings #
+use_xft yes
+xftalpha 0
+xftfont roboto light:size=9
+
+override_utf8_locale yes
+
+imlib_cache_size 0
+
+# Color scheme #
+default_color ffffff
+
+color1 000000
+color2 333333
+
+own_window_argb_value 0
+own_window_argb_visual yes
+TEXT
+#------------+
+# Brightness |
+#------------+
+#${color orange}${voffset 2}${hr 1}
+#${color1}${goto 5}Sun Rise: ${color white}${execpi 300 cat /usr/local/bin/.eyesome-sunrise} ${goto 175}${color1}Set: ${color white}${execpi 300 cat /usr/local/bin/.eyesome-sunset} ${alignr}${color1}Level: ${color white}${execpi 10 cat /sys/class/backlight/intel_backlight/brightness}
+#------------+
+# Weather    |
+#------------+
+${color orange}${voffset 2}${hr 1}
+#${font GE Inspira Mono:size=12}${alignc}${color white}${execpi 300 curl wttr.in/Tirupati?T0 --silent --max-time 3}${font ubuntu:size=10.5}
+${font Dejavu Sans Mono:size=12}${alignc}${color white}${execpi 300 curl wttr.in/Tirupati?T0 --silent --max-time 3}${font ubuntu:size=10.5}
+${color orange}${voffset 2}${hr 1}
